@@ -1,0 +1,131 @@
+/* CSS reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* navigation bar list styling  */
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    color: ;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 2px 11px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.item {
+    list-style-type: none;
+}
+
+/* navigaton bar logo and image  */
+#logo {
+    margin: 12px 13px;
+    /* height: 10px; */
+}
+#logo img{
+    height: 73px;
+    margin: 1px 8px ;
+}
+
+/* Home Section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+}
+#home::before {
+    content:"";
+    /* to use full background image  */
+    background:url("bg1.jpg") no-repeat center center/cover ; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* utiliy class   */
+
+.head-1{
+    font-size:2.8rem;
+    padding:12px;
+    color: black;
+    text-align: center;
+}
+.head-2{
+    font-size: 2.3rem;
+    padding: 10px;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.box p{
+    text-align: center;
+    font-size: 14px
+}
+.but{
+    padding: 8px 23px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Services section  */
+
+#services {
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 22px;
+    background-color: #f1ebeb;
+}
+#services .box img{
+    height: 180px;
+}
+
+#navbar logo img{
+    filter: invert(100%);
+}
